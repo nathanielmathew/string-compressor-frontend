@@ -36,7 +36,9 @@ button:hover{
   color: #282c34;
   background-color: #61dafb;
 }
-
+#result{
+  white-space:pre;
+}
 button{
   margin: 10px;
   background-color: #282c34;
