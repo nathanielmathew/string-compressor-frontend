@@ -1,10 +1,10 @@
-# string-compressor-frontend
+# string-compressor-frontend (ttt)
 
 
 ## The Algorithm
-- The current algorithm being used here is a simple algorithm that makes use of consecutive repitions in a string to compress the size of the string
-- The compressed string simply includes the count of consecutive repititions of a repeating character appended to it. Eg:HellooooWorld becomes Hel2o4World
-- For Decompression, the character 'c' before the repitition count 'n' would simply be expanded to occupy n consecutive places to obtain the decompressed string Eg:Cros3ection becomes Crosssection
+- The current algorithm being used here is a simple algorithm that makes use of the vast range of unicode characters to compress the size of the string
+- The compressed string is a string that is replaced by a specific unicode character for each possible pairing of alphabets, thus reducing string size by upto half the original size.
+- For Decompression, the reverse of the algorithm is implemented. Thus the each unicode character of the string will be inflated using the respective original character pairing.
 
 
 ## Components Of The Code
@@ -28,5 +28,5 @@
 
 
 ## Test cases run
-- Strings with alphabets, symbols, and special characters
+- Strings with lower case alphabets
 - Strings with multiple whitespaces
